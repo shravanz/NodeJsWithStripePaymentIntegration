@@ -1,0 +1,29 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Harry Potter Ebook
+            </h1>
+            <p class="lead">learn the Spell of wizards </p>
+            <form action="/charge" method="POST">
+                <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="{{stripePublishableKey}}"
+                        data-amount="2500"
+                        data-name="harryPotterEbook"
+                        data-description="Ebook Written by JK"
+                        data-image="/img/marketplace.png"
+                        data-locale="auto"
+                        data-zip-code="true">
+                </script>
+                <script>
+                    //hide default stripe button
+
+                </script>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/harry.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</section>
